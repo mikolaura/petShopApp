@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginHorizontal="24dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/meet_your_animal_needs_here"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/illustration"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="40sp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginBottom="20sp"
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"
+        android:text="Get interesting promos here, register your account immediately so you can meet your animal needs."
+        android:textColor="#8888" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
